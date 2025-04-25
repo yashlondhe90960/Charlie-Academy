@@ -1,0 +1,151 @@
+/* styles/userdashboard.css */
+.user-dashboard-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe0b2, #ffcc80); /* Light orange to medium orange */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top on larger screens */
+  }
+  
+  .dashboard-container {
+    max-width: 1200px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+  }
+  
+  .dashboard-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #f57c00; /* Dark orange accent */
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4a148c; /* Deep purple text */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffcc80; /* Medium orange accent line */
+    padding-bottom: 10px;
+  }
+  
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .course-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .course-card h3 {
+    background-color: #ffe0b2; /* Light orange card header */
+    color: #f57c00; /* Dark orange text */
+    padding: 20px;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .course-card .course-description {
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: #555;
+    text-align: left;
+    line-height: 1.6;
+    flex-grow: 1; /* Allow description to take up available space */
+  }
+  
+  .course-card .course-progress {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    color: #777;
+    text-align: left;
+  }
+  
+  .course-card button {
+    background-color: #673ab7; /* Deep purple button */
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .course-card button:hover {
+    background-color: #512da8;
+  }
+  
+  .empty-message {
+    color: #777;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .error-message {
+    color: #d32f2f; /* Error red */
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      padding: 30px;
+    }
+  
+    .dashboard-title {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+  
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+    }
+  
+    .courses-grid {
+      gap: 20px;
+    }
+  
+    .course-card h3 {
+      font-size: 1.3rem;
+      padding: 15px;
+    }
+  
+    .course-card .course-description {
+      font-size: 0.9rem;
+      padding: 10px 15px;
+    }
+  
+    .course-card button {
+      padding: 12px 15px;
+      font-size: 0.9rem;
+    }
+  }

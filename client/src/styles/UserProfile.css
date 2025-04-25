@@ -1,0 +1,190 @@
+/* styles/UserProfile.css */
+.user-profile-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe0b2, #ffcc80); /* Sunset gradient */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .profile-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f57c00; /* Dark orange */
+    margin-bottom: 30px;
+  }
+  
+  .profile-info {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .profile-info h3 {
+    font-size: 1.5rem;
+    color: #4a148c; /* Deep purple */
+    margin-bottom: 5px;
+  }
+  
+  .profile-info p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-left: 10px;
+  }
+  
+  .profile-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .update-button,
+  .delete-button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-button {
+    background-color: #673ab7; /* Deep purple */
+    color: white;
+  }
+  
+  .update-button:hover {
+    background-color: #512da8;
+  }
+  
+  .delete-button {
+    background-color: #d32f2f; /* Red */
+    color: white;
+  }
+  
+  .delete-button:hover {
+    background-color: #c62828;
+  }
+  
+  .loading-container,
+  .error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe0b2, #ffcc80); /* Sunset gradient */
+  }
+  
+  .loading-text,
+  .error-text {
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
+  /* Edit Dialog Styles */
+  .edit-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .edit-dialog {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-title {
+    font-size: 2rem;
+    color: #f57c00; /* Dark orange */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-group input[type='text'],
+  .form-group input[type='email'],
+  .form-group input[type='password'] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .password-note {
+    display: block;
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  .dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .cancel-button,
+  .save-button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancel-button {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .cancel-button:hover {
+    background-color: #d1d1d1;
+  }
+  
+  .save-button {
+    background-color: #f57c00; /* Dark orange */
+    color: white;
+  }
+  
+  .save-button:hover {
+    background-color: #e65100;
+  }

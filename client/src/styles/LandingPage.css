@@ -1,0 +1,205 @@
+/* styles/landingpage.css */
+.landing-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe0b2, #ffcc80); /* Light orange to medium orange */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4a148c; /* Deep purple for text contrast */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #ff9800, #f57c00); /* Bright orange to dark orange */
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.hero-content button {
+  background-color: #673ab7; /* Deep purple accent button */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+  background-color: #512da8;
+}
+
+.courses-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fbe9e7; /* Light peach background for contrast */
+}
+
+.courses-section h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #f57c00; /* Dark orange accent */
+  margin-bottom: 40px;
+}
+
+.courses-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.course-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course-card h3 {
+  background-color: #ffe0b2; /* Light orange card header */
+  color: #f57c00; /* Dark orange text */
+  padding: 20px;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.course-card .course-description {
+  padding: 20px;
+  font-size: 1rem;
+  color: #555;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.card-actions {
+  padding: 15px 20px;
+  text-align: right;
+}
+
+.card-actions button {
+  background-color: #673ab7; /* Deep purple action button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-actions button:hover {
+  background-color: #512da8;
+}
+
+.loading-text,
+.error-text {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1rem;
+  color: #777;
+}
+
+.error-text {
+  color: #d32f2f; /* Error red */
+}
+
+.landing-page-footer {
+  background-color: #4a148c; /* Deep purple footer background */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.footer-section h3 {
+  color: #ffcc80; /* Medium orange for headings */
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #f57c00; /* Dark orange on hover */
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  font-size: 0.9rem;
+  text-align: center; /* Center the copyright text */
+}
+
+.footer-bottom p {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments for footer */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr; /* Stack sections on smaller screens */
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 30px;
+  }
+}

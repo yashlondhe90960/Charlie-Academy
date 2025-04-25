@@ -1,0 +1,149 @@
+/* styles/addassessment.css */
+.add-assessment-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe0b2, #ffcc80); /* Light orange to medium orange */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .add-assessment-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .add-assessment-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f57c00; /* Dark orange accent */
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .assessment-info,
+  .add-question-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #4a148c; /* Deep purple text */
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .input-group input[type='text'],
+  .input-group input[type='number'],
+  .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .input-group textarea {
+    resize: vertical;
+  }
+  
+  .input-group input:focus,
+  .input-group textarea:focus {
+    border-color: #f57c00; /* Dark orange focus */
+    outline: none;
+  }
+  
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .option-group label {
+    margin-bottom: 5px;
+  }
+  
+  .add-question-button {
+    background-color: #673ab7; /* Deep purple button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-question-button:hover {
+    background-color: #512da8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .added-questions-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .questions-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .question-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .question-item:last-child {
+    border-bottom: none;
+  }
+  
+  .add-assessment-button {
+    background-color: #f57c00; /* Dark orange primary button */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-assessment-button:hover {
+    background-color: #e65100;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }

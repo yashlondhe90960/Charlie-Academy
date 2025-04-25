@@ -1,0 +1,113 @@
+/* styles/NavBar.css */
+.sunset-navbar {
+  background: linear-gradient(90deg, #ffcc80, #f57c00); /* Sunset gradient */
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky; /* Make it stick to the top */
+  top: 0;
+  z-index: 100; /* Ensure it's above other content */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Optional: Limit width for larger screens */
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  margin-right: 10px;
+  font-size: 1.8rem;
+  /* You could also use an actual image icon here */
+}
+
+.navbar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  margin-left: 15px;
+}
+
+.navbar-item button {
+  background: none;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-item button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+}
+
+/* Style for the Home button to always be on the right */
+.navbar-home {
+  margin-left: auto;
+}
+
+/* Subtle animation for the logo */
+.navbar-logo {
+  animation: pulseLogo 2s infinite alternate;
+}
+
+@keyframes pulseLogo {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+/* Subtle animation for the nav items on hover */
+.navbar-item button {
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-item button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: left 0.4s ease;
+  z-index: 0;
+}
+
+.navbar-item button:hover::before {
+  left: 0;
+}
+
+.navbar-item button > * { /* Target both icon and text */
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,154 @@
+/* styles/assessmentpage.css */
+.assessment-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe0b2, #ffcc80); /* Light orange to medium orange */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .assessment-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .assessment-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f57c00; /* Dark orange accent */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .assessment-info {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #4a148c; /* Deep purple text */
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .questions-form {
+    margin-top: 20px;
+  }
+  
+  .question-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .question-text {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  
+  .option-button {
+    background-color: white;
+    color: #4a148c; /* Deep purple */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .option-button:hover {
+    background-color: #f57c00; /* Dark orange */
+    color: white;
+    border-color: #f57c00;
+  }
+  
+  .option-button.selected {
+    background-color: #673ab7; /* Deep purple selected */
+    color: white;
+    border-color: #673ab7;
+  }
+  
+  .submit-button {
+    background-color: #f57c00; /* Dark orange submit */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+  }
+  
+  .submit-button:hover {
+    background-color: #e65100;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .result-section {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .result-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .back-to-course-button {
+    background-color: #673ab7; /* Deep purple back button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back-to-course-button:hover {
+    background-color: #512da8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .error-message {
+    background-color: #ffebee;
+    color: #d32f2f;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+  }

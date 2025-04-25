@@ -1,0 +1,74 @@
+/* styles/addvideo.css */
+.add-video-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe0b2, #ffcc80); /* Light orange to medium orange */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .add-video-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .add-video-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f57c00; /* Dark orange accent */
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .input-group {
+    margin-bottom: 25px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4a148c; /* Deep purple text */
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .input-group input[type='text'],
+  .input-group input[type='url'] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .input-group input:focus {
+    border-color: #f57c00; /* Dark orange focus */
+    outline: none;
+  }
+  
+  .add-video-button {
+    background-color: #673ab7; /* Deep purple button */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .add-video-button:hover {
+    background-color: #512da8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }

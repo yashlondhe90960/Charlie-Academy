@@ -1,0 +1,113 @@
+/* styles/assessmentdetails.css */
+.assessment-details-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffe0b2, #ffcc80); /* Light orange to medium orange */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .assessment-details-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f57c00; /* Dark orange accent */
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .assessment-info {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .info-item {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .info-item strong {
+    font-weight: bold;
+    color: #4a148c; /* Deep purple */
+  }
+  
+  .info-value {
+    font-weight: normal;
+  }
+  
+  .questions-section {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #4a148c; /* Deep purple text */
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .questions-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .question-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .question-item:last-child {
+    border-bottom: none;
+  }
+  
+  .question-text {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .question-number {
+    font-weight: bold;
+    color: #f57c00; /* Dark orange */
+    margin-right: 5px;
+  }
+  
+  .answer-text {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .correct-answer {
+    font-weight: bold;
+    color: #2e7d32; /* Green for correct answer */
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+  }
+  
+  .loading-text {
+    font-size: 1.2rem;
+    color: #777;
+  }
